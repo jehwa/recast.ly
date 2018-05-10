@@ -1,2 +1,2 @@
-// TODO: Render the `App` component to the DOM
-
+// TODO: Render the `App` component to 
+ReactDOM.render(<App/>, document.getElementById("app"));
