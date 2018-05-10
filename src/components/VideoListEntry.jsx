@@ -4,7 +4,7 @@ var VideoListEntry = (prop) => (
       <img className="media-object" src={prop.video.snippet.thumbnails.default.url} alt="" />
     </div>
     <div className="media-body">
-      <div className="video-list-entry-title" onClick=>{prop.video.snippet.title}</div>
+      <div className="video-list-entry-title" onClick={function(){prop.callback(prop.video)}}>{prop.video.snippet.title}</div>
       <div className="video-list-entry-detail">{prop.video.snippet.description}</div>
     </div>
   </div>
